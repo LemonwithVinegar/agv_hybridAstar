@@ -1,0 +1,10 @@
+<launch>
+    <node
+        pkg="warning"
+        type="warning_node"
+        name="warning_node"
+        output="screen"
+        cwd="node">
+     
+    </node>
+</launch>

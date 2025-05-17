@@ -1,0 +1,9 @@
+<launch>
+    <node
+        pkg="obu"
+        type="obu_node"
+        name="obu_node"
+        output="screen"
+        cwd="node">
+    </node>
+</launch>

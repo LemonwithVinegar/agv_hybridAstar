@@ -1,0 +1,6 @@
+<launch>
+    #-------------------------SLAM 定位---------------------------#
+    <include file="$(find cartographer_ros)/launch/my_robot.launch" />
+    <!-- <include file="$(find cartographer_ros)/launch/my_robot_purLocation.launch" />  -->
+</launch> 
+

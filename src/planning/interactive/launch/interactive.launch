@@ -1,0 +1,10 @@
+<launch>
+    <node
+        pkg="interactive"
+        type="interactive_node"
+        name="interactive_node"
+        output="screen"
+        cwd="node">
+     
+    </node>
+</launch>

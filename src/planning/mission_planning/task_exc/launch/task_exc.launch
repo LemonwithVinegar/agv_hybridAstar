@@ -1,0 +1,13 @@
+<launch>
+    <node
+        pkg="task_exc"
+        type="task_exc_node"
+        name="task_exc_node"
+        output="screen"
+        cwd="node">
+
+        <param name="park_lat" value="106.82814799" />
+        <param name="park_lon" value="29.71559335"/>
+     
+    </node>
+</launch>

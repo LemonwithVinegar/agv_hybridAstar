@@ -1,0 +1,29 @@
+注意：使用纯slam建图后定位。需要关闭node.cc中的tf发布
+
+1、修改了slam_pose位姿转换，匹配到与组合导航设备一致
+2、增加了slam的轨迹保存，用于保存slam轨迹（需要调用保存服务）：save_slam_trajectory.sh, 在源码node.cc中修改【该轨迹以slam原点建立的坐标】
+3、新场地轨迹如何建立：
+	启动mapDataSample.launch文件，便于后续分析，同时录制lidar、navimsg、rawimu数据包: rosbag record ...
+		fout1保存惯性导航设备的定位点；
+		fout2保存slam的定位点；
+		fout3混合点迹（用于最终地图地图制作，细节由fout1和fout2进行辅助制作）；
+		所有点迹均已经转换到map坐标系下；
+	在进入室内（导航设备失去精准定位前，42状态为准），刹停车，手动启动slam定位:
+						（	终端 rosparam set /Is_slam_start 1 
+							等待 rosparam get /Is_slam_start 是2   且   rosparam get /slam_origin_get_once 是true
+							启动 roslaunch ./src/real_time_slam_location.launch  且  rosparam set /Is_slam_start 3
+						 ）;
+						rostopic echo /slam_pose有输出之后，继续遥控收集轨迹即可
+	出室内时，选择合适地点（最好在某个地点等待GNSS设备状态恢复），关闭slam: 
+						（	rosparam set /Is_slam_start 0
+							rosparam set /slam_origin_get_once false
+							sh ./src/reboot_slam.sh
+						）；
+						继续遥控收集轨迹到终点即可；
+
+
+	手动遥控时，室内移动速度不应过快；
+	slam致命点，旋转不易过快！！！
+
+
+	modify time: 2022/7/12 

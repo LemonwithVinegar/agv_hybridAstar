@@ -1,0 +1,32 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${workspaceFolder}/.vscode/browse.vc.db",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/soulauh/Desktop/AirportPerimeterInspection_v6/AirportPerimeterInspection/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/home/soulauh/Desktop/catkin_ros/src/Astar-ROS-master2/Astar-ROS-master/include/**",
+        "/home/soulauh/Desktop/AirportPerimeterInspection_v6/AirportPerimeterInspection/src/common/compute/include/**",
+        "/home/soulauh/Desktop/AirportPerimeterInspection_v6/AirportPerimeterInspection/src/vehicle_control/lat_controller/include/**",
+        "/home/soulauh/Desktop/AirportPerimeterInspection_v6/AirportPerimeterInspection/src/vehicle_control/lon_controller/include/**",
+        "/home/soulauh/Desktop/AirportPerimeterInspection_v6/AirportPerimeterInspection/src/perception/detection/lidar_driver/lslidar_c16/lslidar_c16_decoder/include/**",
+        "/home/soulauh/Desktop/AirportPerimeterInspection_v6/AirportPerimeterInspection/src/perception/detection/lidar_driver/lslidar_c16/lslidar_c16_driver/include/**",
+        "/home/soulauh/Desktop/AirportPerimeterInspection_v6/AirportPerimeterInspection/src/perception/detection/lidar_detection/pointcloud_to_laserscan/include/**",
+        "/home/soulauh/Desktop/AirportPerimeterInspection_v6/AirportPerimeterInspection/src/serial/include/**",
+        "/home/soulauh/Desktop/AirportPerimeterInspection_v6/AirportPerimeterInspection/src/planning/udp_telecontrol_pkg/include/**",
+        "/home/soulauh/Desktop/AirportPerimeterInspection_v6/AirportPerimeterInspection/src/vehicle_control/vehicle_chassis_n3/include/**",
+        "/home/soulauh/Desktop/AirportPerimeterInspection_v6/AirportPerimeterInspection/src/perception/localization/navigation_driver/wave_lidar/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

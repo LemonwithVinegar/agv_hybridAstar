@@ -1,0 +1,8 @@
+<launch>
+    <node
+        pkg="udp_telecontrol"
+        type="udp_telecontrol_node"
+        name="udp_telecontrol_node"
+        output = "screen">
+    </node>
+</launch>

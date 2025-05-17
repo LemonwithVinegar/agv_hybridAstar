@@ -1,0 +1,10 @@
+<launch>
+    <node
+        pkg="filter"
+        type="node_filter"
+        name="node_filter"
+        output="screen"
+        cwd="node">
+    </node>
+
+</launch>

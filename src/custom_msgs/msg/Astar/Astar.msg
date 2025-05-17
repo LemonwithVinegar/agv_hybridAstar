@@ -1,0 +1,1 @@
+bool new_plan_executing #后面每一次重新规划标志位，用来解除前一次停车状态

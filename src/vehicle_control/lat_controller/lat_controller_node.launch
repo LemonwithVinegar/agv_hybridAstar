@@ -1,0 +1,35 @@
+<launch>
+    <node
+        pkg="lat_controller"
+        type="lat_controller_node"
+        name="lat_controller_node"
+        output="screen"
+        cwd="node">
+        <param name="veh_len" value="0.75" />
+        <param name="veh_width" value="0.54" />
+        <param name="veh_hight" value="0.65" />
+        <param name="veh_mass" value="50" />
+        <param name="veh_f_tread" value="0.5" />
+        <param name="veh_r_tread" value="0.5" />
+        <param name="veh_wheelbase" value="0.51" />
+        <param name="veh_steering_ratio" value="1" />
+        <param name="veh_max_wheel_turn_angle" value="1024" />
+        <param name="veh_max_steer_turn_angle" value="20" />
+        <param name="veh_wheel_diam" value="0.2 " />
+    </node>
+</launch>
+<!--
+
+  float len;                    //车长
+  float width;                  //车宽
+  float hight;                  //车高
+  float mass;                   //车重
+  float f_tread;                //前轮轮距
+  float r_tread;                //后轮轮距
+  float wheelbase;              //轴距
+  float steering_ratio;         //转向比
+  float max_wheel_angle;        //最大车轮转角
+  float max_steer_angle;        //最大方向盘转角
+  float wheel_diam;             //车轮直径
+
+-->

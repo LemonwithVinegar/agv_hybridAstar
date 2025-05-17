@@ -1,0 +1,24 @@
+<launch>
+    <arg name="fixed_frame" default="/map"/>
+
+    <param name="robot_description" textfile="$(find rrt_star_global_planner)/model/car_model/default.urdf"/>
+    <node pkg="joint_state_publisher" type="joint_state_publisher" name="joint_state_publisher"/>
+    <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher"/>
+
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find rrt_star_global_planner)/rviz/rrt.rviz"/>
+
+    <!--static_transform_publisher x y z yaw pitch roll frame_id child_frame_id period_in_ms-->
+    <node pkg="tf" type="static_transform_publisher" name="link1_broadcaster"
+          args="0 0 0 0 0 0 /map /odom 100"/>
+
+    <node pkg="map_server" type="map_server" name="map_server" args="$(find rrt_star_global_planner)/maps/111.yaml"/>
+
+    <!--启动rrt全局规划器-->
+  <node pkg="rrt_star_global_planner" type="rrt_star_planner" respawn="false" name="rrt_star_planner" output="screen">
+    <rosparam file="$(find rrt_star_global_planner)/params/test_rrt_star_planner1.yaml" command="load" />
+  </node>
+  <node
+        pkg="rrt_star_global_planner" type="goal_pub" name="goal_pose_pub" output="screen">
+    </node>
+
+</launch>

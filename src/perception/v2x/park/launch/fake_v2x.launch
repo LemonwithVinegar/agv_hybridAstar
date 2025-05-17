@@ -1,0 +1,8 @@
+<launch>
+    <node
+        pkg="obu"
+        type="fake_v2x_node"
+        name="obu_node"
+        output = "screen">
+    </node>
+</launch>

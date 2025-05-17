@@ -1,0 +1,8 @@
+<launch>
+    <node pkg="obj_track"
+        type="obj_track"
+        name="obj_track"
+        output="screen"
+        cwd="node">
+    </node>
+</launch>

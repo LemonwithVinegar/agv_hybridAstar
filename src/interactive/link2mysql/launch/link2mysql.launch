@@ -1,0 +1,10 @@
+<launch>
+    <node
+        pkg="link2mysql"
+        type="link2mysql_node"
+        name="link2mysql_node"
+        output="screen"
+        cwd="node">
+     
+    </node>
+</launch>

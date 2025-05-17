@@ -1,0 +1,8 @@
+<launch>
+    <node
+        pkg="park"
+        type="park_node"
+        name="park_node"
+        output = "screen">
+    </node>
+</launch>

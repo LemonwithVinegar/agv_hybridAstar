@@ -1,0 +1,23 @@
+<launch>
+    <node pkg="tf" type="static_transform_publisher" name="slam2gnss"
+        args="1.9 -5.3 0  0 0 -0.982 0.191 map slam_map 100"/>
+    <node pkg="map_server" type="map_server" name="map_server" args="$(find hybrid_a_star)/maps/xt_outdoor1.yaml">
+        <param name="frame_id" value="slam_map" />
+    </node>
+
+    <node pkg="hybrid_a_star" type="run_hybrid_astar" name="run_hybrid_astar" output="screen">
+        <param name="planner/steering_angle" value="24.0"/>
+        <param name="planner/steering_angle_discrete_num" value="1"/>
+        <param name="planner/wheel_base" value="2.0"/>
+        <param name="planner/segment_length" value="1.6"/>
+        <param name="planner/segment_length_discrete_num" value="8"/>
+        <param name="planner/steering_penalty" value="1.5"/>
+        <param name="planner/reversing_penalty" value="20.0"/>
+        <param name="planner/steering_change_penalty" value="2.0"/>
+        <param name="planner/shot_distance" value="5.0"/>
+    </node>
+    
+    <node
+        pkg="hybrid_a_star" type="goal_pose_pub" name="goal_pose_pub" output="screen">
+    </node>
+</launch>

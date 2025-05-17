@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package>
+  <name>object_track</name>
+  <version>1.0.0</version>
+  <description>The object_track package</description>
+
+  <maintainer email="504755617@qq.com">liumengxin</maintainer>
+
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+ <!-- <build_depend>roscpp</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>pcl_ros</build_depend>
+  <build_depend>custom_msgs</build_depend>
+
+  <run_depend>message_runtime</run_depend>
+  <run_depend>pcl_ros</run_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>sensor_msgs</run_depend>-->
+  <build_depend>custom_msgs</build_depend>
+  <run_depend>custom_msgs</run_depend>
+  
+
+
+
+  <export></export>
+</package>

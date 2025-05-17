@@ -1,0 +1,8 @@
+<launch>
+    <node
+        pkg="test"
+        type="test_node"
+        name="node_test"
+        output = "screen">
+    </node>
+</launch>

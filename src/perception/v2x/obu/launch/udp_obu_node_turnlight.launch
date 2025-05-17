@@ -1,0 +1,9 @@
+<launch>
+    <node
+        pkg="obu"
+        type="udp_obu_node_turnlight"
+        name="udp_obu_node_turnlight"
+        output="screen"
+        cwd="node">
+    </node>
+</launch>

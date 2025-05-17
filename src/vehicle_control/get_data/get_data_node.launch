@@ -1,0 +1,9 @@
+<launch>
+    <node
+        pkg="get_data"
+        type="get_data_node"
+        name="get_data_node"
+        output="screen"
+        cwd="node">
+    </node>
+</launch>

@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "iostream": "cpp"
+    },
+    "python.autoComplete.extraPaths": [
+        "/home/nvidia/Desktop/slam_indoor_1116_qiehuan_v2/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ]
+}

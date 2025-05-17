@@ -1,0 +1,9 @@
+<launch>
+    <node
+        pkg="aeb"
+        type="aeb_node"
+        name="aeb_node"
+        output = "screen">
+        <param name="object_topic" type="string" value="/ass_object" />   
+    </node>
+</launch>

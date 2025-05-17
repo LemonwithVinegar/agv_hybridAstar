@@ -1,0 +1,19 @@
+1. 安装依赖
+    $ sudo apt install libpcap-dev
+    $ sudo apt-get install ros-kinetic-tf2
+    $ sudo apt-get install ros-kinetic-geographic-msgs
+    若要编译图像相关部分还需安装
+        相机驱动Spinnaker
+        caffe-ssd
+    或者切换代码分支到except_vision，该分支中移除了图像相关部分的代码
+        $ git checkout except_vision
+    
+2. 添加工程目录到环境变量
+    $ export SEED_HOME=放置代码的目录/Seed
+    example: 
+        $ export SEED_HOME=/home/sushold/Desktop/workspace/Seed
+    该语句仅对当前终端有效，若要永久生效可将此语句添加到~/.bashrc中。
+
+3. 编译
+    $ cd $SEED_HOME
+    $ catkin_make

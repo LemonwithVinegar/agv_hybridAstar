@@ -1,0 +1,8 @@
+<launch>
+    <node pkg="ukf"
+        type="ukf_node"
+        name="ukf_name"
+        output="screen"
+        cwd="node">
+    </node>
+</launch>

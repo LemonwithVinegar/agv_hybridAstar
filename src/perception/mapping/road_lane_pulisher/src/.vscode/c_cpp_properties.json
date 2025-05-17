@@ -1,0 +1,29 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${workspaceFolder}/.vscode/browse.vc.db",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/nvidia/Desktop/slam_indoor_1116_qiehuan_v2/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/nvidia/Desktop/slam_indoor_1116_qiehuan_v2/src/common/compute/include/**",
+        "/home/nvidia/Desktop/slam_indoor_1116_qiehuan_v2/src/perception/detection/lidar_detection/cv_bridge_new/include/**",
+        "/home/nvidia/Desktop/slam_indoor_1116_qiehuan_v2/src/vehicle_control/lat_controller/include/**",
+        "/home/nvidia/Desktop/slam_indoor_1116_qiehuan_v2/src/perception/localization/uwb_localizer/include/**",
+        "/home/nvidia/Desktop/slam_indoor_1116_qiehuan_v2/src/vehicle_control/lon_controller/include/**",
+        "/home/nvidia/Desktop/slam_indoor_1116_qiehuan_v2/src/perception/detection/lidar_detection/pointcloud_to_laserscan/include/**",
+        "/home/nvidia/Desktop/slam_indoor_1116_qiehuan_v2/src/serial/include/**",
+        "/home/nvidia/Desktop/slam_indoor_1116_qiehuan_v2/src/vehicle_control/vehicle_chassis_n3/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-arm64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

@@ -1,0 +1,10 @@
+<launch>
+    <node
+        pkg="link2app_fake"
+        type="link2app_fake_node"
+        name="link2app_fake_node"
+        output="screen"
+        cwd="node">
+     
+    </node>
+</launch>

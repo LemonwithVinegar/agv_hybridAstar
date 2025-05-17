@@ -1,0 +1,20 @@
+
+
+
+
+
+<launch>
+    <node pkg="tf" type="static_transform_publisher" name="slam2gnss"
+        args="1.9 -5.3 0  0 0 -0.982 0.191 map slam_map 100"/>
+    <node pkg="map_server" type="map_server" name="map_server" args="$(find rrt_star_global_planner)/maps/xt_outdoor1.yaml">
+        <param name="frame_id" value="slam_map" />
+    </node>
+
+    <node pkg="rrt_star_global_planner" type="rrt_star_planner" respawn="false" name="rrt_star_planner" output="screen">
+    <rosparam file="$(find rrt_star_global_planner)/params/test_rrt_star_planner1.yaml" command="load" />
+  </node>
+    
+    <node
+        pkg="rrt_star_global_planner" type="goal_pub" name="goal_pose_pub" output="screen">
+    </node>
+</launch>

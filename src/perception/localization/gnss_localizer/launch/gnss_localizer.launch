@@ -1,0 +1,28 @@
+<launch>
+    <node
+        pkg="gnss_localizer"
+        type="simple_localization_node"
+        name="gnss_localizer_node"
+        output = "screen">
+        <!-- <param name="map_longitude" value="106.601928865" />
+        <param name="map_latitude" value="29.5377413215" />
+        <param name="map_yaw" value="0" /> -->
+
+       <!-- <param name="map_longitude" value="106.60201333" />
+        <param name="map_latitude" value="29.52848067" /> 
+        <param name="map_yaw" value="0" /> -->
+
+	<!-- #xue xiao
+        <param name="map_longitude" value="106.601925836" />
+        <param name="map_latitude" value="29.5377395072" /> -->
+
+        #xt
+ 	    <param name="map_longitude" value="106.55382867" />
+        <param name="map_latitude" value="29.74668727" />
+	    <param name="map_yaw" value="0" />     
+
+
+        <param name="is_display_trajectory" value="true" /> #是否显示轨迹
+        <param name="is_save_trajectory" value="true" />    #是否保存轨迹，需要启用显示轨迹,默认存在/$SEED_HOME/data/navidation/trajectory.txt
+    </node>
+</launch>

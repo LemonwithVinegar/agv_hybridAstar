@@ -1,0 +1,10 @@
+<launch>
+    <node
+        pkg="lidar_trans_map"
+        type="lidar_to_map"
+        name="lidar_to_map"
+        output="screen"
+        cwd="node">
+    </node>
+
+</launch>

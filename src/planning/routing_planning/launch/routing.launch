@@ -1,0 +1,8 @@
+<launch>
+    <node
+        pkg="routing_planning"
+        type="routing_planning_node"
+        name="routing_planning_node"
+        output = "screen">
+    </node>
+</launch>

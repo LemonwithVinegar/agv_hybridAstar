@@ -1,0 +1,10 @@
+<launch>
+    <node
+        pkg="link2app"
+        type="link2app_node"
+        name="link2app_node"
+        output="screen"
+        cwd="node">
+     
+    </node>
+</launch>

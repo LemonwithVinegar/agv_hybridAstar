@@ -1,0 +1,9 @@
+<launch>
+    <node
+        pkg="hyastar_task_pub"
+        type="hyastar_task_pub_node"
+        name="hyastar_task_pub_node"
+        output="screen"
+        cwd="node">
+    </node>
+</launch>

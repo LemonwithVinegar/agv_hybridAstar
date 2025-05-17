@@ -1,0 +1,8 @@
+<launch>
+    <node
+    pkg="fake_object_tracking"
+    type="fake_object_tracking_node"
+    name="fake_object_publisher"
+    output = "screen">
+    </node>
+</launch>

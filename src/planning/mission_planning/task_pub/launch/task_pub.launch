@@ -1,0 +1,9 @@
+<launch>
+    <node
+        pkg="task_pub"
+        type="task_pub_node"
+        name="task_pub_node"
+        output="screen"
+        cwd="node">
+    </node>
+</launch>

@@ -1,0 +1,24 @@
+#------------------------------
+#任务请求
+#------------------------------
+uint8                   Is_Light_mission        = 1    #灯光控制任务  
+uint8                   Is_traffic_light        = 2    #通过红绿灯任务
+uint8                   Is_Avoid_obstacle       = 3    #避障
+uint8                   Is_Back_car             = 4    #倒车
+uint8                   Is_Pass_gate            = 5    #闸门任务
+uint8                   Is_change_map           = 6    #地图切换
+uint8                   Is_slam_change_map      = 7    #slam切换地图
+uint8                   Is_stop_run_car         = 8	
+uint8                   Is_find_obj             = 9	    #找某个区间是否有人，停车、
+
+uint8                   Is_start_slam           = 10	#室内外切换，slam启动
+uint8                   Is_close_slam           = 11    #室内外切换，slam关闭
+
+uint8     task_type      #任务id
+float64   s_start        #任务区间起始
+float64   s_end          #任务区间结束
+float64   info           #任务信息
+float64   info_2         #任务信息2
+---
+bool isSuccess
+
